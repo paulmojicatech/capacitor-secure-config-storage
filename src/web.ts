@@ -10,7 +10,7 @@ export class SecureConfigStorageWeb
     return options;
   }
 
-  async getConfigValue(key: string): Promise<{result: string}> {
+  async getValueFromConfig(key: string): Promise<{result: string}> {
     return Promise.resolve({ result: key });
   }
 

@@ -15,4 +15,11 @@ public class SecureConfigStoragePlugin: CAPPlugin {
             "value": implementation.echo(value)
         ])
     }
+    
+    @objc func getValueFromConfig(_ call: CAPPluginCall) {
+        let value = call.getString("value") ?? ""
+        call.resolve([
+            "value": implementation.getValueFromConfig(value)
+        ])
+    }
 }

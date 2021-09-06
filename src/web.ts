@@ -9,4 +9,13 @@ export class SecureConfigStorageWeb
     console.log('ECHO', options);
     return options;
   }
+
+  async getConfigValue(key: string): Promise<{result: string}> {
+    return Promise.resolve({ result: key });
+  }
+
+  async storeConfigValue(key: string): Promise<void> {
+    console.log(key);
+    return Promise.resolve();
+  }
 }

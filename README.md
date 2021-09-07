@@ -14,7 +14,7 @@ npx cap sync
 <docgen-index>
 
 * [`echo(...)`](#echo)
-* [`getConfigValue(...)`](#getconfigvalue)
+* [`getValueFromConfig(...)`](#getvaluefromconfig)
 * [`storeConfigValue(...)`](#storeconfigvalue)
 
 </docgen-index>
@@ -37,15 +37,15 @@ echo(options: { value: string; }) => any
 --------------------
 
 
-### getConfigValue(...)
+### getValueFromConfig(...)
 
 ```typescript
-getConfigValue(key: string) => any
+getValueFromConfig(options: { key: string; }) => any
 ```
 
-| Param     | Type                |
-| --------- | ------------------- |
-| **`key`** | <code>string</code> |
+| Param         | Type                          |
+| ------------- | ----------------------------- |
+| **`options`** | <code>{ key: string; }</code> |
 
 **Returns:** <code>any</code>
 
@@ -55,12 +55,12 @@ getConfigValue(key: string) => any
 ### storeConfigValue(...)
 
 ```typescript
-storeConfigValue(key: string) => any
+storeConfigValue(options: { key: string; }) => any
 ```
 
-| Param     | Type                |
-| --------- | ------------------- |
-| **`key`** | <code>string</code> |
+| Param         | Type                          |
+| ------------- | ----------------------------- |
+| **`options`** | <code>{ key: string; }</code> |
 
 **Returns:** <code>any</code>
 

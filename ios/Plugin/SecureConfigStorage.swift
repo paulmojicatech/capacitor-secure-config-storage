@@ -6,8 +6,8 @@ import Foundation
     }
     
     @objc public func getValueFromConfig(_ value: String) -> String {
-        let path = Bundle.main.path(forResource: "Info", ofType: "plist") as! String
+        let path = Bundle.main.path(forResource: "Info", ofType: "plist")!
         let infoContents = NSDictionary(contentsOfFile: path) as! [String:AnyObject]
-        return infoContents["ClientSecret"] as! String
+        return infoContents[value] as! String
     }
 }

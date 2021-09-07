@@ -40,12 +40,12 @@ echo(options: { value: string; }) => any
 ### getValueFromConfig(...)
 
 ```typescript
-getValueFromConfig(key: string) => any
+getValueFromConfig(options: { key: string; }) => any
 ```
 
-| Param     | Type                |
-| --------- | ------------------- |
-| **`key`** | <code>string</code> |
+| Param         | Type                          |
+| ------------- | ----------------------------- |
+| **`options`** | <code>{ key: string; }</code> |
 
 **Returns:** <code>any</code>
 
@@ -55,12 +55,12 @@ getValueFromConfig(key: string) => any
 ### storeConfigValue(...)
 
 ```typescript
-storeConfigValue(key: string) => any
+storeConfigValue(options: { key: string; }) => any
 ```
 
-| Param     | Type                |
-| --------- | ------------------- |
-| **`key`** | <code>string</code> |
+| Param         | Type                          |
+| ------------- | ----------------------------- |
+| **`options`** | <code>{ key: string; }</code> |
 
 **Returns:** <code>any</code>
 

@@ -1,6 +1,6 @@
 {
   "name": "capacitor-secure-config-storage",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Access native config settings",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",

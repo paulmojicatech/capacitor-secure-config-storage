@@ -19,4 +19,13 @@ public class SecureConfigStoragePlugin extends Plugin {
         ret.put("value", implementation.echo(value));
         call.resolve(ret);
     }
+
+    @PluginMethod
+    public void getValueFromConfig(PluginCall call) {
+        String key = call.getString("key");
+
+        // Get key value from configuration
+        JSObject ret = new JSObject();
+        ret.put("result", implementation.getValueFromConfig("Test Conn String"));
+    }
 }

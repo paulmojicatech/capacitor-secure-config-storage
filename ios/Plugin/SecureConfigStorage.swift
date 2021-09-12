@@ -5,9 +5,18 @@ import Foundation
         return value
     }
     
-    @objc public func getValueFromConfig(_ value: String) -> String {
-        let path = Bundle.main.path(forResource: "Info", ofType: "plist")!
-        let infoContents = NSDictionary(contentsOfFile: path) as! [String:AnyObject]
-        return infoContents[value] as! String
+    @objc public func getValueFromConfig(_ value: String) -> String? {
+        guard let path = Bundle.main.path(forResource: "Info", ofType: "plist") else {
+            return nil
+        }
+        guard let infoContents: [String : AnyObject] = NSDictionary(contentsOfFile: path) as? [String : AnyObject] else {
+            return nil
+        }
+        return infoContents[value] as? String
+    }
+    
+    @objc public func seedDatabase(_ value: [String]?) -> String {
+        // if there are scripts use
+        return ""
     }
 }

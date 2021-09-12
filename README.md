@@ -15,7 +15,7 @@ npx cap sync
 
 * [`echo(...)`](#echo)
 * [`getValueFromConfig(...)`](#getvaluefromconfig)
-* [`storeConfigValue(...)`](#storeconfigvalue)
+* [`seedDatabase(...)`](#seeddatabase)
 
 </docgen-index>
 
@@ -52,15 +52,15 @@ getValueFromConfig(options: { key: string; }) => any
 --------------------
 
 
-### storeConfigValue(...)
+### seedDatabase(...)
 
 ```typescript
-storeConfigValue(options: { key: string; }) => any
+seedDatabase(options: { scripts?: string[]; }) => any
 ```
 
-| Param         | Type                          |
-| ------------- | ----------------------------- |
-| **`options`** | <code>{ key: string; }</code> |
+| Param         | Type                           |
+| ------------- | ------------------------------ |
+| **`options`** | <code>{ scripts?: {}; }</code> |
 
 **Returns:** <code>any</code>
 
